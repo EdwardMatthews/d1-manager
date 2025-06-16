@@ -66,7 +66,7 @@ Rules:
 **策略 2: Service Token 访问（用于API调用）**
 ```yaml
 Policy Name: "API Service Tokens"
-Action: Allow
+Action: Service Auth
 Rules:
   - Include:
       - Service Token: [稍后创建的Service Token名称]
