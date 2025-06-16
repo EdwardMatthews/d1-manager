@@ -2,7 +2,7 @@
 
 ## Cloudflare Access 配置指南
 
-在使用API之前，您需要先配置 Cloudflare Access 来保护您的 D1 Manager 应用。
+在使用API之前，需要先配置 Cloudflare Access 来保护您的 D1 Manager 应用。
 
 ### 前置要求
 
