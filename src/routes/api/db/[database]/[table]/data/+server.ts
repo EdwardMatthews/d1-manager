@@ -8,7 +8,7 @@ import type { RequestHandler } from "./$types";
 
 export const GET: RequestHandler = async ({ url, params, locals, fetch }) => {
 	if (dev) {
-		const remote = new URL("https://d1-manager.pages.dev" + url.pathname + url.search);
+		const remote = new URL("https://d1-manager-8x5.pages.dev" + url.pathname + url.search);
 		const res = await fetch(remote);
 		return json(await res.json());
 	}
@@ -71,7 +71,7 @@ export const POST: RequestHandler = async ({ request, params, locals }) => {
 
 export const PUT: RequestHandler = async ({ url, request, params, locals }) => {
 	if (dev) {
-		const remote = new URL("https://d1-manager.pages.dev" + url.pathname + url.search);
+		const remote = new URL("https://d1-manager-8x5.pages.dev" + url.pathname + url.search);
 		const res = await fetch(remote, { method: "PUT", body: await request.text() });
 		return json(await res.json());
 	}
@@ -106,7 +106,7 @@ export const PUT: RequestHandler = async ({ url, request, params, locals }) => {
 
 export const DELETE: RequestHandler = async ({ url, params, locals }) => {
 	if (dev) {
-		const remote = new URL("https://d1-manager.pages.dev" + url.pathname + url.search);
+		const remote = new URL("https://d1-manager-8x5.pages.dev" + url.pathname + url.search);
 		const res = await fetch(remote, { method: "DELETE" });
 		return json(await res.json());
 	}

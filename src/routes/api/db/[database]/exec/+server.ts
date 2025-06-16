@@ -4,7 +4,7 @@ import type { RequestHandler } from "./$types";
 
 export const POST: RequestHandler = async ({ request, params, locals, url, fetch }) => {
 	if (dev) {
-		const remote = new URL("https://d1-manager.pages.dev" + url.pathname + url.search);
+		const remote = new URL("https://d1-manager-8x5.pages.dev" + url.pathname + url.search);
 		const res = await fetch(remote, { method: "POST", body: await request.text() });
 		return json(await res.json());
 	}

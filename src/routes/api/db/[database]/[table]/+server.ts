@@ -8,7 +8,7 @@ import type { RequestHandler } from "./$types";
 
 export const GET: RequestHandler = async ({ params, locals, url, fetch }) => {
 	if (dev) {
-		const remote = new URL("https://d1-manager.pages.dev" + url.pathname + url.search);
+		const remote = new URL("https://d1-manager-8x5.pages.dev" + url.pathname + url.search);
 		const res = await fetch(remote);
 		return json(await res.json());
 	}

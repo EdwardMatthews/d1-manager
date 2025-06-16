@@ -11,7 +11,7 @@ const log = extend("api/db/+server");
 
 export const GET: RequestHandler = async ({ params, locals, url, fetch, platform }) => {
 	if (dev) {
-		const remote = new URL("https://d1-manager.pages.dev" + url.pathname + url.search);
+		const remote = new URL("https://d1-manager-8x5.pages.dev" + url.pathname + url.search);
 		return fetch(remote);
 	}
 
