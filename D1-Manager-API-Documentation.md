@@ -456,6 +456,7 @@ curl -X POST "https://your-d1-manager.pages.dev/api/db/default/exec" \
 
 #### POST /api/db/{database}/all
 
+
 执行参数化SQL查询，返回所有结果。
 
 **路径参数**:
